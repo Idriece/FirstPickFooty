@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:id="@+id/activity_login_rl"
+    tools:context="edu.gsu.httpscs.firstpickfooty.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="370dp"
+        android:src="@mipmap/soccer_ball"/>
+
+    <EditText
+        android:id="@+id/login_username_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@null"
+        android:hint="Username"
+        android:textColorHint="@android:color/white"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="350dp"
+        android:visibility="visible"/>
+
+    <EditText
+        android:id="@+id/login_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@null"
+        android:hint="Password"
+        android:textColorHint="@android:color/white"
+        android:inputType="textWebPassword"
+        android:textSize="35dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/login_username_et"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:text="Login"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_below="@id/login_password_et"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/register_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:text="Register"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="25dp"
+        android:layout_below="@id/login_bt"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/register_bt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:text="Register"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="25dp"
+        android:layout_below="@id/login_bt"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/register_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/register_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:hint="Enter Username"
+            android:textColorHint="@android:color/white"
+            android:inputType="text"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="275dp"/>
+
+        <EditText
+            android:id="@+id/register_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:hint="Set Password"
+            android:textColorHint="@android:color/white"
+            android:inputType="textWebPassword"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/register_username_et"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/register_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:hint="Enter Name"
+            android:textColorHint="@android:color/white"
+            android:inputType="text"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/register_password_et"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/register_position_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:hint="Choose Position"
+            android:textColorHint="@android:color/white"
+            android:inputType="text"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/register_name_et"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
